@@ -1,0 +1,74 @@
+.footer {
+  display: flex;
+  align-items: center;
+  margin: -0.5rem -3.5rem;
+  position: relative;
+  margin-top: -9rem;
+}
+
+.f-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 4rem;
+  gap: 4rem;
+  color: white;
+}
+
+.f-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 3rem; /* Adjust margin top */
+  }
+
+  .f-content {
+    margin-top: 4rem; /* Adjust margin top */
+    gap: 2rem; /* Reduce gap for smaller screens */
+  }
+
+  .f-icons {
+    gap: 2rem; /* Reduce gap between icons */
+  }
+
+  .f-icons > * {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .f-mail{
+    margin-top: 1.5rem;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    margin-top: 4rem; /* Further adjust margin top */
+  }
+
+  .f-content {
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+
+  .f-icons {
+    gap: 1rem; /* Further reduce gap between icons */
+  }
+
+  .f-icons > * {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .f-mail{
+    margin-top: 1rem;
+    font-size: 14px;
+  }
+}
