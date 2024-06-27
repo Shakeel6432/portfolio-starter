@@ -64,8 +64,8 @@ export default function Intro() {
         </motion.div>
 
         <motion.div
-          initial={{ top: "18rem", left: "9rem" }}
-          whileInView={{ left: "0rem" }}
+          initial={{ top: "18.2rem", left: "9rem" }}
+          whileInView={{ left: "0.2rem" }}
           transition={transition}
 
           style={{ top: "18rem", left: "0rem" }}

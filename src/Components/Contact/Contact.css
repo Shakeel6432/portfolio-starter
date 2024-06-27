@@ -59,7 +59,9 @@ textarea {
     margin: scale(1);
     padding: 0 1rem;
     height: auto;
+    margin-left: -1rem;
   }
+  
 
   .c-right > form {
     display: flex;
@@ -70,7 +72,7 @@ textarea {
   }
 
   .user {
-    width: 100%; /* Full width for inputs on smaller screens */
+    width: 12rem; /* Full width for inputs on smaller screens */
   }
 
   textarea {
