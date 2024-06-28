@@ -1,6 +1,7 @@
 import React from "react";
 import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { motion } from "framer-motion";
 import Sidebar from "../../img/sidebar.png";
 import Ecommerce from "../../img/ecommerce.png";
 import HOC from "../../img/hoc.png";
@@ -16,7 +17,7 @@ export default function Portfolio() {
   return (
     <div className="portfolio" id="Portfolio">
       {/* heading */}
-      <span style={{color: darkMode? 'white' : ''}}>Recent Projects</span>
+      <span style={{ color: darkMode ? "white" : "" }}>Recent Projects</span>
       <span>Portfolio</span>
 
       {/* slider */}
@@ -27,18 +28,35 @@ export default function Portfolio() {
         className="portfolio-slider"
       >
         <SwiperSlide>
-          <img src={Sidebar} alt="" />
+          <motion.img 
+            src={Sidebar} 
+            alt="" 
+            whileHover={{ y: -10 }} 
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Ecommerce} alt="" />
+          <motion.img 
+            src={Ecommerce} 
+            alt="" 
+            whileHover={{ y: -10 }} 
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={MusicApp} alt="" />
+          <motion.img 
+            src={MusicApp} 
+            alt="" 
+            whileHover={{ y: -10 }} 
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={HOC} alt="" />
+          <motion.img 
+            src={HOC} 
+            alt="" 
+            whileHover={{ y: -10 }} 
+          />
         </SwiperSlide>
       </Swiper>
     </div>
   );
 }
+

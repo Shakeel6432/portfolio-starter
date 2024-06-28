@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import Toggle from "../Toggle/Toggle";
 import { Link } from "react-scroll";
-import Shakeel from '../../img/shakeel.png.png'
+import Shakeel from '../../img/Shakeel (3).png'
 
 export default function Navbar() {
   return (

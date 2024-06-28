@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 70hv;
+  height: 70vh;
   margin-bottom: 12rem;
 }
 
@@ -22,21 +22,54 @@
 
 /* slider */
 .portfolio .swiper {
-  overflow: visiable !important;
+  overflow: visible !important;
 }
 
 .portfolio-slider {
-    margin-top: 3rem;
-    width: 100%;
+  margin-top: 3rem;
+  width: 100%;
+  overflow: visible;
 }
 
-.portfolio-slider .swiper-slide{
-    width: 20rem;
+.portfolio-slider .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  width: 20rem;
 }
 
 .portfolio img {
-    width: 22rem;
-    filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
-    border-radius: 19px;
+  width: 22rem;
+  filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
+  border-radius: 19px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+  .portfolio-slider .swiper-slide {
+    width: 15rem; /* Adjust the width for tablets */
+  }
+
+  .portfolio img {
+    width: 17rem; /* Adjust the image width for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-slider .swiper-slide {
+    width: 12rem; /* Adjust the width for mobile devices */
+  }
+
+  .portfolio img {
+    width: 14rem; /* Adjust the image width for mobile devices */
+  }
+
+  .portfolio span:nth-of-type(1) {
+    font-size: 1.5rem; /* Adjust heading size for mobile */
+  }
+  .portfolio span:nth-of-type(2) {
+    font-size: 2rem; /* Adjust heading size for mobile */
+  }
+}

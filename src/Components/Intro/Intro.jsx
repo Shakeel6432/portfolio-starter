@@ -14,7 +14,6 @@ import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { motion } from "framer-motion";
 
-
 export default function Intro() {
   const transition = { duration: 2, type: "spring" };
 
@@ -28,8 +27,9 @@ export default function Intro() {
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
           <span>Muhammad Shakeel</span>
           <span>
-            Frontend Developer with high level of experience in web designing
-            and development, producting the high Quality work
+            Frontend web developer skilled in HTML, CSS, JavaScript, TypeScript,
+            ReactJS, NextJS, NodeJS. Currently, I'm expanding my knowledge in
+            Artificial Intelligence to enhance my development expertise.
           </span>
         </div>
 
@@ -49,7 +49,6 @@ export default function Intro() {
           initial={{ left: "-36%" }}
           whileInView={{ left: "-24%" }}
           transition={transition}
-          
           src={glassesimoji}
           alt=""
         />
@@ -67,7 +66,6 @@ export default function Intro() {
           initial={{ top: "18.2rem", left: "9rem" }}
           whileInView={{ left: "0.2rem" }}
           transition={transition}
-
           style={{ top: "18rem", left: "0rem" }}
           className="floating-div"
         >
