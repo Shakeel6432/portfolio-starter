@@ -34,7 +34,7 @@ export default function Intro() {
           </span>
         </div>
 
-        <button className="button i-button">Hire me</button>
+        <a href="#Contact"><button className="button i-button">Hire me</button></a>
         <div className="i-icons">
           <img src={Github} alt="" />
           <img src={Linkedln} alt="" />
