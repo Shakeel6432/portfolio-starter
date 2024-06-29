@@ -98,10 +98,12 @@
     flex-direction: column;
     height: 64rem;
     gap: 7rem;
+    margin-top: 4rem;
   }
   .i-right {
     transform: scale(0.8);
     left: -3rem;
+    margin-top: 6rem;
   }
   .i-right .blur {
     display: none;

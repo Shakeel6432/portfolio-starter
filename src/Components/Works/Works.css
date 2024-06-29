@@ -2,13 +2,18 @@
   padding: 6rem 3rem 0 3rem;
   display: flex;
   height: 90vh;
-  margin-top: 4rem;
+  margin-top: 5rem;
+}
+
+.awesome{
+    margin-top: -3rem;
 }
 
 /* right side */
 .w-right {
   position: relative;
   left: 10rem;
+  transform: scale(1);
 }
 
 .w-mainCircle {
@@ -84,6 +89,7 @@
     left: 18rem;
     top: 8rem;
 }
+
 
 @media screen and (max-width: 480px) {
     .works{

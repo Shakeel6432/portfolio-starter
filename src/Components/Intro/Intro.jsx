@@ -28,8 +28,9 @@ export default function Intro() {
           <span>Muhammad Shakeel</span>
           <span>
             Frontend web developer skilled in HTML, CSS, JavaScript, TypeScript,
-            ReactJS, NextJS, NodeJS. Currently, I'm expanding my knowledge in
-            Artificial Intelligence to enhance my development expertise.
+            ReactJS, NextJS, NodeJS. <br /> Currently, I'm expanding my
+            knowledge in Artificial Intelligence to enhance my development
+            expertise.
           </span>
         </div>
 

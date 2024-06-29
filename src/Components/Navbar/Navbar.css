@@ -1,3 +1,4 @@
+/* General Styles */
 .n-wrapper {
   height: 10vh;
   display: flex;
@@ -41,15 +42,74 @@
   color: var(--orange);
 }
 
-.n-button{
-    flex: 2;
+.n-button {
+  flex: 2;
 }
 
+/* Dark Mode Styles */
+.dark-mode .n-wrapper {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .n-list.open {
+  background-color: #333;
+  color: white; /* Text color should be white in dark mode */
+}
+
+.dark-mode .n-list > ul > li {
+  color: #fff;
+}
+
+/* Mobile Styles */
 @media screen and (max-width: 480px) {
-  .n-list{
+  .n-list {
     display: none;
   }
-  .n-button{
+  .n-button {
+    display: none;
+  }
+  .toggle {
+    position: absolute;
+    left: 4rem;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    margin-top: 0.4rem;
+  }
+  .n-list.open {
+    display: flex;
+    position: absolute;
+    top: calc(10vh + 1rem);
+    right: 1rem;
+    width: auto;
+    flex-direction: column;
+    z-index: 100;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  .dark-mode .n-list.open {
+    background-color: #333;
+    color: white;
+  }
+  .n-list > ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  .n-list > ul > li {
+    margin: 0.5rem 0;
+    color: inherit; /* Inherit text color */
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .hamburger {
     display: none;
   }
 }

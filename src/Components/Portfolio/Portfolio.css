@@ -48,28 +48,33 @@
 
 /* Media queries for mobile responsiveness */
 @media (max-width: 768px) {
+  .portfolio{
+    margin-top: -10rem;
+    margin-bottom: -4rem;
+  }
+
   .portfolio-slider .swiper-slide {
-    width: 15rem; /* Adjust the width for tablets */
+    width: 15rem;
   }
 
   .portfolio img {
-    width: 17rem; /* Adjust the image width for tablets */
+    width: 17rem; 
   }
 }
 
 @media (max-width: 480px) {
   .portfolio-slider .swiper-slide {
-    width: 12rem; /* Adjust the width for mobile devices */
+    width: 12rem; 
   }
 
   .portfolio img {
-    width: 14rem; /* Adjust the image width for mobile devices */
+    width: 14rem; 
   }
 
   .portfolio span:nth-of-type(1) {
-    font-size: 1.5rem; /* Adjust heading size for mobile */
+    font-size: 1.5rem; 
   }
   .portfolio span:nth-of-type(2) {
-    font-size: 2rem; /* Adjust heading size for mobile */
+    font-size: 2rem; 
   }
 }
